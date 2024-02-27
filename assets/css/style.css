@@ -1,0 +1,21 @@
+/* Asterisk selector added in order to override browser's default style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: lightcoral;
+}
+
+/* Main Content*/
+main {
+    background-color: lightblue;
+}
+
+/*footer*/
+footer {
+    background-color: orange;
+}
