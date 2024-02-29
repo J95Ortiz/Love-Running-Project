@@ -186,7 +186,7 @@ main {
 
 #times h3 {
     /* Overrides the h3 colour set above */
-    color:#fafafa
+    color: #fafafa
 }
 
 /* Gallery Page */
@@ -208,11 +208,18 @@ main {
     list-style-type: none;
 }
 
-#social-networks
-i {
+#social-networks i {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* Media query: Large & landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /* Media query: Tablets & larger (768px and up) */
@@ -276,13 +283,24 @@ i {
         align-self: flex-end;
     }
 
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
+
 }
 
 /* Media query: Laptops & larger (992px and up) */
 @media screen and (min-width: 992px) {
+
     /* Header */
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
     }
 }
 
