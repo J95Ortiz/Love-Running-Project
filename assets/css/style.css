@@ -94,6 +94,9 @@ main {
     /* Making main element take up any extra space and push footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Hero section */
@@ -197,6 +200,44 @@ main {
 
 #photos {
     line-height: 0;
+}
+
+/* Signup Page */
+#signup {
+    background: url(../images/signup-image.webp);
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+    padding: 20px 10% 0 10%;
+}
+
+#signup>h2 {
+    color:#fafafa;
+    margin-bottom: 20px;
+}
+
+#signup-form {
+    color:#ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+.text-input {
+    background: transparent;
+    color:#fafafa;
+    border: 1px solid #fafafa;
+    height: 25px;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 0 5px;
+    width: 100%;
+}
+
+#radio-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 /*footer*/
